@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRO - Digital Nest Solutions</title>
+    <link rel="stylesheet" href="MRO.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-flex">
+                    <img src="./resources/Images/DNS_Logo.png" alt="logo">
+                    <div class="hamburger" id="hamburger">&#9776;</div>
+                  </div>
+                <div class="side-menu" id="sideMenu">
+                    <div id="closeBtn" class="close-btn">&times;</div>
+                    <ul class="sidenav-navlist">
+                      <li><a href="MRO.html">Home</a></li>
+                      <li><a href="MRO.html">About Us</a></li>
+                  
+                      <!-- Our Services Dropdown -->
+                      <li>
+                        <button onclick="toggleSidenavDropdown(this)">Our Services ▾</button>
+                        <ul class="sidenav-dropdown-content">
+                          <li><a href="#">MRO</a></li>
+                          <!-- Data Annotation -->
+                          <li>
+                            <button onclick="toggleSidenavSubDropdown(this)">Data Annotation ▸</button>
+                            <ul class="sidenav-sub-dropdown-content">
+                              <li><a href="#">Image Annotation</a></li>
+                              <li><a href="#">Text Annotation</a></li>
+                              <li><a href="#">Video Annotation</a></li>
+                            </ul>
+                          </li>
+                  
+                          <!-- Design Services -->
+                          <li>
+                            <button onclick="toggleSidenavSubDropdown(this)">Design Services ▸</button>
+                            <ul class="sidenav-sub-dropdown-content">
+                              <li><a href="#">Interior Design</a></li>
+                              <li><a href="#">PV Design</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="MRO.html">Quality Services</a></li>
+                      <li><a href="MRO.html">Engagement Model</a></li>
+                      <button id="contact-sidenav-button">Contact Us</button>
+                    </ul>
+                  </div>                
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="MRO.html">Home</a></li>
+                    <li><a href="MRO.html">About Us</a></li>
+                    
+                    <!-- Our Services Dropdown -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Our Services</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">MRO</a></li>
+    
+                            <!-- Data Annotation Submenu -->
+                            <li class="sub-dropdown">
+                                <a>Data Annotation ▸</a>
+                                <ul class="sub-dropdown-content">
+                                    <li><a href="#">Image Annotation</a></li>
+                                    <li><a href="#">Text Annotation</a></li>
+                                    <li><a href="#">Video Annotation</a></li>
+                                </ul>
+                            </li>
+    
+                            <!-- Design Services Submenu -->
+                            <li class="sub-dropdown">
+                                <a>Design Services ▸</a>
+                                <ul class="sub-dropdown-content">
+                                    <li><a href="#">Interior Design</a></li>
+                                    <li><a href="#">PV Design</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="MRO.html">Quality Services</a></li>
+                    <li><a href="MRO.html">Engagement Model</a></li>
+                    <li><button class="contactus">Contact Us</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>MRO Master Data Management</h1>
+                <p>Streamline your maintenance, repair, and overhaul operations with our comprehensive data management solutions</p>
+            </div>
+        </section>
+
+        <section class="mro-overview">
+            <div class="container">
+                <div class="mro-intro">
+                    <div class="mro-text">
+                        <h2>MRO (Maintenance, Repair, and Overhaul)</h2>
+                        <br>
+                        <p>MRO refers to the activities and processes required to maintain, repair, and overhaul assets, such as equipment, machinery, vehicles, and facilities. These activities are crucial for industries such as aviation, manufacturing, energy, and transportation, where regular maintenance is essential to ensure operational efficiency and safety.
+                        MRO processes usually require extensive inventory management, as businesses need to keep track of spare parts, tools, and other components for maintenance activities.</p>
+                    </div>
+                    <div class="mro-image">
+                        <img src="./resources/Images/MasterDataManagement.png" alt="MRO Illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+              <h2 class="section-title">Our MRO Services</h2>
+              <div class="service-cards-wrapper">
+                
+                <!-- Service Card Template -->
+                <div class="service-card" id="data-cleansing">
+                  <h3>MRO Data Cleansing</h3>
+                  <p>Improve data quality by removing duplicates, correcting inaccuracies, and standardizing formats.</p>
+                  <button class="read-more">Read More</button>
+                </div>
+          
+                <div class="service-card" id="master-data">
+                  <h3>Material Master Data Management</h3>
+                  <p>Manage and govern material master data with centralized systems and automated workflows.</p>
+                  <button class="read-more">Read More</button>
+                </div>
+          
+                <div class="service-card" id="classification">
+                  <h3>Data Classification Services</h3>
+                  <p>Organize MRO materials with industry-standard or custom taxonomies for better control.</p>
+                  <button class="read-more">Read More</button>
+                </div>
+          
+                <div class="service-card" id="supplier-data">
+                  <h3>Supplier Data Management</h3>
+                  <p>Ensure accurate supplier information and streamline procurement processes.</p>
+                  <button class="read-more">Read More</button>
+                </div>
+          
+                <div class="service-card" id="onsite-data">
+                  <h3>Onsite Data Sourcing</h3>
+                  <p>Capture and verify asset and equipment data directly from your facilities.</p>
+                  <button class="read-more">Read More</button>
+                </div>
+          
+                <div class="service-card" id="regulatory">
+                  <h3>Regulatory Compliance</h3>
+                  <p>Ensure your MRO data adheres to safety, environmental, and industry regulations.</p>
+                  <button class="read-more">Read More</button>
+                </div>
+          
+              </div>
+            </div>
+          </section>
+          
+          <!-- Modal -->
+          <div id="service-modal" class="modal">
+            <div class="modal-content-wrapper">
+              <span class="close-modal">&times;</span>
+              <h2 id="modal-title"></h2>
+              <div id="modal-content"></div>
+              <button id="contact-button" class="contact-btn">Contact Us</button>
+            </div>
+          </div>
+          
+        <section class="industries">
+            <div class="container">
+                <h2>Industries We Serve</h2>
+                <div class="industries-grid">
+                    <!-- Aviation -->
+                    <div class="industry-card">
+                        <div class="industry-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M22 16.21v-1.895L14 8V4a2 2 0 0 0-4 0v4L2 14.315v1.895l8-2.63V18l-2 2v1l4-1 4 1v-1l-2-2v-4.315l8 2.525z"/>
+                                </svg>
+                            </div>
+                            <h3>Aviation</h3>
+                        </div>
+                        <p>Specialized MRO data management for aircraft maintenance and operations.</p>
+                    </div>
+                    
+                    <!-- Manufacturing -->
+                    <div class="industry-card">
+                        <div class="industry-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M10.5 2.5L9.5 3.5V6.5L5.5 10.5H2.5L1.5 11.5L4.5 14.5L1.5 17.5L2.5 18.5L5.5 19.5L6.5 22.5L7.5 23.5L10.5 20.5L13.5 23.5L14.5 22.5L15.5 19.5L18.5 18.5L19.5 17.5L16.5 14.5L19.5 11.5L18.5 10.5H15.5L11.5 6.5V3.5L10.5 2.5Z M10.5 14.5C9.4 14.5 8.5 13.6 8.5 12.5C8.5 11.4 9.4 10.5 10.5 10.5C11.6 10.5 12.5 11.4 12.5 12.5C12.5 13.6 11.6 14.5 10.5 14.5Z"/>
+                                </svg>
+                            </div>
+                            <h3>Manufacturing</h3>
+                        </div>
+                        <p>Streamlining maintenance operations for manufacturing facilities and equipment.</p>
+                    </div>
+                    
+                    <!-- Energy, Oil and Gas -->
+                    <div class="industry-card">
+                        <div class="industry-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 3L6 15H10.5V21L18 9H13.5V3H12M7.5 24C6.12 24 5 22.88 5 21.5C5 20.12 6.12 19 7.5 19H9V21.5C9 22.88 7.88 24 6.5 24H7.5M16.5 24C15.12 24 14 22.88 14 21.5V19H15.5C16.88 19 18 20.12 18 21.5C18 22.88 16.88 24 15.5 24H16.5Z"/>
+                                </svg>
+                            </div>
+                            <h3>Energy, Oil and Gas</h3>
+                        </div>
+                        <p>Maintaining critical infrastructure data for energy production and distribution.</p>
+                    </div>
+                    
+                    <!-- Power & Utilities -->
+                    <div class="industry-card">
+                        <div class="industry-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 3L4 15H10V21L18 9H12V3M19 12V20H21V12H19M19 22V24H21V22H19Z"/>
+                                </svg>
+                            </div>
+                            <h3>Power & Utilities</h3>
+                        </div>
+                        <p>Supporting maintenance operations for power generation and utility companies.</p>
+                    </div>
+                    
+                    <!-- Construction -->
+                    <div class="industry-card">
+                        <div class="industry-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2L1 12H4V21H11V15H13V21H20V12H23L12 2M12 5.5L18 11V19H15V13H9V19H6V11L12 5.5Z"/>
+                                </svg>
+                            </div>
+                            <h3>Construction</h3>
+                        </div>
+                        <p>Managing equipment and material data for construction projects.</p>
+                    </div>
+                    
+                    <!-- Automotive -->
+                    <div class="industry-card">
+                        <div class="industry-header">
+                            <div class="icon-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18.9 6c-.2-.6-.8-1-1.4-1h-11c-.7 0-1.2.4-1.4 1L3 12v8c0 .6.4 1 1 1h1c.6 0 1-.4 1-1v-1h12v1c0 .6.4 1 1 1h1c.6 0 1-.4 1-1v-8l-2.1-6zM6.5 16c-.8 0-1.5-.7-1.5-1.5S5.7 13 6.5 13s1.5.7 1.5 1.5S7.3 16 6.5 16zm11 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                                </svg>
+                            </div>
+                            <h3>Automotive</h3>
+                        </div>
+                        <p>Specialized data services for automotive maintenance and parts management.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-statement">
+            <div class="container">
+                <h2>Our Quality Commitment</h2>
+                <p>Quality is an integral part of our "Core Business Model". Our quality statement is considerate of cost effectiveness, customer demands and satisfaction, and on-time deliveries. We strive to continuously improve and meet global quality standards. We comply with all international standards and regulatory requirements.</p>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <h2>Ready to Optimize Your MRO Operations?</h2>
+                <p>Contact our team of experts to discuss how Digital Nest Solutions can help streamline your MRO data management.</p>
+                <button id="contact-button">Contact Us Today</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="column">
+                    <img src="http://digitalnestsolutions.com/wp-content/uploads/2023/04/DNS_Logo.png" alt="logo" id="footer-logo">
+                </div>
+                <div class="column">
+                <h3>Reach Us</h3>
+                    <a id="reachus-link" href="mailto:info@digitalnestsolutions.com">info@digitalnestsolutions.com</a>
+                    <a id="reachus-link" href="http://digitalnestsolutions.com">www.digitalnestsolutions.com</a>
+                </div>
+                <div class="column">
+                    <h3>Our Office Location</h3>
+                    <p>No 4, Old Bogadhi Road, Vijaynagara 3rd Stage, Hinkal, Raghavendra Circle, Mysore KA 570017.</p>
+                </div>
+                <div class="column">
+                    <h3>Social Media Channels</h3>
+                    <p>We are also available on the following channels and we shall connect on these platforms as well.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank">
+                          <img src="/resources/Images/linkedin.png" alt="LinkedIn" />
+                        </a>
+                        <a href="#" target="_blank">
+                          <img src="/resources/Images/twitter.png" alt="Twitter" />
+                        </a>
+                        <a href="#" target="_blank">
+                          <img src="/resources/Images/facebook.png" alt="Facebook" />
+                        </a>
+                      </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="text-center pt-3 border-top mt-3">
+                <p>&copy; 2025 Digital Nest Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>    
+    <div class="service-modal" id="service-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Service Title</h2>
+            <div id="modal-content">
+                <p>Service description will be displayed here.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="MRO.js"></script>
+</body>
+</html>
