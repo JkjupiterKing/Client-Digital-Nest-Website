@@ -1,0 +1,33 @@
+/* Header styling */
+:root {
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --nav-color: #333;
+  --nav-hover: #555;
+  --font-family: 'Inter', sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: var(--header-bg);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+.navbar li {
+  margin: 0 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: var(--nav-hover);
+}
