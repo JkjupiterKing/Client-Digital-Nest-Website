@@ -1,5 +1,8 @@
 Client Digital Nest Website
 
+refrence website:
+https://qdata.co.in/
+
 A responsive corporate website developed for Client Digital Nest using HTML, CSS, and JavaScript. The website includes reusable components such as a common Header and Footer, which are loaded across all pages for easy maintenance and consistency.
 
 Features
