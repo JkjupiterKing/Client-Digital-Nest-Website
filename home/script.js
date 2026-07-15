@@ -9,6 +9,12 @@ function nextSlide() {
   heroSlides[currentSlide].classList.remove('active');
   currentSlide = (currentSlide + 1) % heroSlides.length;
   heroSlides[currentSlide].classList.add('active');
+  
+  // Reset and trigger zoom animation for the new slide
+  const img = heroSlides[currentSlide].querySelector('img');
+  img.style.animation = 'none';
+  img.offsetHeight; // Trigger reflow
+  img.style.animation = 'zoomOut 1s ease-out';
 }
 
 // Auto-slide every 7 seconds

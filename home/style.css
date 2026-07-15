@@ -28,7 +28,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 2.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 
 .hero-slide.active {
@@ -40,7 +40,7 @@
   height: 100%;
   object-fit: cover;
   filter: blur(4px);
-  animation: zoomOut 1s ease-out;
+  animation: zoomOut 0.5s ease-out;
 }
 
 @keyframes zoomOut {
@@ -105,6 +105,12 @@
 
 .feature-card {
   text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 82, 204, 0.2);
 }
 
 .card-image {
@@ -128,6 +134,15 @@
 /* Services Preview Section */
 .services-preview {
   margin: 4rem 0;
+}
+
+.services-preview .card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.services-preview .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 82, 204, 0.2);
 }
 
 /* CTA Section */
@@ -158,7 +173,8 @@
 }
 
 .cta .btn:hover {
-  background-color: #e8f0ff;
+  background-color: #ff6b35;
+  color: #ffffff;
 }
 
 /* Responsive */

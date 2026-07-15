@@ -69,11 +69,10 @@
 
 /* About Section */
 .about-section {
-  padding: 4rem 0;
+  padding: 3rem 3rem 3rem 3rem;
   background-color: var(--color-white);
   border-radius: 8px;
-  padding: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .about-content h2 {
@@ -97,16 +96,20 @@
 
 .mission-vision .card {
   text-align: center;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  padding: 2rem;
 }
 
 .mission-vision h3 {
-  color: var(--color-primary);
+  color: #ffffff;
   font-size: 1.9rem;
 }
 
 .mission-vision p {
   font-size: 1.15rem;
   line-height: 1.7;
+  color: #e8f0ff;
 }
 
 .values-list {
@@ -117,11 +120,11 @@
 
 .values-list li {
   padding: 0.5rem 0;
-  color: var(--color-gray);
+  color: #e8f0ff;
 }
 
 .values-list strong {
-  color: var(--color-primary);
+  color: #ffffff;
 }
 
 /* Why Choose Us */

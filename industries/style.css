@@ -135,6 +135,12 @@
   border-radius: 8px;
   margin: 3rem 0;
   border: 2px solid var(--color-border);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.cta-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 82, 204, 0.2);
 }
 
 .cta-section h2 {

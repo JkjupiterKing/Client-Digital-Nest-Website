@@ -90,10 +90,13 @@
 
 .solution-card {
   position: relative;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  padding: 2rem;
 }
 
 .solution-card h3 {
-  color: var(--color-primary);
+  color: #ffffff;
   margin-bottom: 1rem;
   font-size: 1.9rem;
 }
@@ -101,13 +104,14 @@
 .solution-card p {
   font-size: 1.15rem;
   line-height: 1.7;
+  color: #e8f0ff;
 }
 
 .solution-card ul {
   list-style: none;
   padding: 0;
   margin-top: 1rem;
-  color: var(--color-gray);
+  color: #e8f0ff;
 }
 
 .solution-card li {
@@ -120,7 +124,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--color-primary);
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -178,6 +182,12 @@
   padding: 3rem;
   border-radius: 8px;
   margin: 3rem 0;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.cta-section.lifted {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 82, 204, 0.3);
 }
 
 .cta-section h2 {
@@ -192,6 +202,12 @@
 .cta-section .btn {
   background-color: var(--color-white);
   color: var(--color-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  background-color: #003a99;
+  color: #ffffff;
 }
 
 /* Responsive */
