@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an online consultation appointment with Digital Nest Solutions engineering and data specialists - Schedule date, time, and topic.">
+  <title>Appointment Booking - Digital Nest Solutions</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../components/header/header.css">
+  <link rel="stylesheet" href="../components/footer/footer.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <section class="page-hero">
+    <div class="hero-background">
+      <img src="../assets/images/contact.jpg" alt="Appointment Booking">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">CONSULTATION &amp; STRATEGY SESSION</p>
+      <h1>Book an Appointment</h1>
+      <p>Schedule a 30-minute virtual consultation with a Digital Nest Solutions architect</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="booking-section" style="margin: 4rem 0;">
+      <div class="booking-grid" style="display: grid; grid-template-columns: 1fr 380px; gap: 3rem; align-items: flex-start;">
+        
+        <!-- Booking Form Card -->
+        <div class="booking-form-card card" style="padding: 2.5rem; border-radius: 8px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+          <h2 style="color: #092a4a; margin-bottom: 0.5rem; font-size: 2rem;">Select Date &amp; Time</h2>
+          <p style="color: #526274; margin-bottom: 2rem;">Choose your preferred consultation topic and schedule a convenient meeting time.</p>
+
+          <form id="bookingForm">
+            <!-- Step 1: Topic -->
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="booking-topic" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Consultation Topic *</label>
+              <select id="booking-topic" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px; background: white;">
+                <option value="">-- Choose Consultation Subject --</option>
+                <option value="mdm-strategy">Master Data Management Strategy</option>
+                <option value="mro-cleansing">MRO &amp; Spare Parts Cataloging</option>
+                <option value="material-master">Material Master Standardisation</option>
+                <option value="sample-audit">Sample Data Audit Review</option>
+                <option value="general-consult">General Digital Transformation</option>
+              </select>
+            </div>
+
+            <!-- Step 2: Date & Time Picker -->
+            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <div class="form-group">
+                <label for="booking-date" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Preferred Date *</label>
+                <input type="date" id="booking-date" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+              </div>
+
+              <div class="form-group">
+                <label for="booking-time" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Preferred Time Slot *</label>
+                <select id="booking-time" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px; background: white;">
+                  <option value="">-- Select Time Slot --</option>
+                  <option value="10:00 AM">10:00 AM - 10:30 AM IST</option>
+                  <option value="11:30 AM">11:30 AM - 12:00 PM IST</option>
+                  <option value="02:00 PM">02:00 PM - 02:30 PM IST</option>
+                  <option value="03:30 PM">03:30 PM - 04:00 PM IST</option>
+                  <option value="05:00 PM">05:00 PM - 05:30 PM IST</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Step 3: Contact Info -->
+            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <div class="form-group">
+                <label for="client-name" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Your Name *</label>
+                <input type="text" id="client-name" required placeholder="Full Name" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+              </div>
+              <div class="form-group">
+                <label for="client-email" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Business Email *</label>
+                <input type="email" id="client-email" required placeholder="name@company.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="booking-notes" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Meeting Objectives / Agenda Notes</label>
+              <textarea id="booking-notes" rows="4" placeholder="Mention key topics or questions you'd like to address..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;"></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; padding: 1rem; font-size: 1.05rem;">Confirm Appointment</button>
+          </form>
+
+          <div id="bookingMessage" class="form-message" style="margin-top: 1rem;"></div>
+        </div>
+
+        <!-- Sidebar Info -->
+        <div class="booking-sidebar">
+          <div class="card" style="padding: 2rem; border-radius: 8px; background: #092a4a; color: white; margin-bottom: 1.5rem;">
+            <h3 style="color: #f29f05; margin-bottom: 1rem;">What to Expect</h3>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #f29f05;">1</span>
+                Instant calendar invite via email
+              </li>
+              <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #f29f05;">2</span>
+                1-on-1 virtual video conference (Teams / Zoom / Meet)
+              </li>
+              <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                <span style="position: absolute; left: 0; color: #f29f05;">3</span>
+                Actionable recommendation roadmap &amp; sample scope
+              </li>
+            </ul>
+          </div>
+
+          <div class="card text-center" style="padding: 2rem; border-radius: 8px; background: #fff5df; border: 1px solid #f29f05;">
+            <h4 style="color: #092a4a; margin-bottom: 0.5rem;">Free Sample Audit Included</h4>
+            <p style="color: #526274; font-size: 0.95rem;">Book a session to get up to 50 sample records cleansed free of charge during our technical review.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../components/header/header.js"></script>
+  <script src="../components/footer/footer.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

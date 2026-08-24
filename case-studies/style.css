@@ -1,0 +1,55 @@
+.case-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #092a4a;
+  color: var(--color-white);
+}
+
+.case-hero-content { position: relative; z-index: 1; padding-top: 5rem; padding-bottom: 5rem; }
+.eyebrow { color: #f29f05; font-size: .78rem; font-weight: 700; letter-spacing: .14em; margin-bottom: .8rem; }
+.case-hero h1 { max-width: 760px; color: var(--color-white); font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.05; margin-bottom: 1.2rem; }
+.case-hero p:not(.eyebrow) { max-width: 580px; color: #dce8f3; font-size: 1.2rem; margin-bottom: 2rem; }
+.hero-grid { position: absolute; inset: 0 0 0 52%; opacity: .55; background-image: linear-gradient(rgba(242,159,5,.22) 1px, transparent 1px), linear-gradient(90deg, rgba(242,159,5,.22) 1px, transparent 1px); background-size: 54px 54px; transform: perspective(500px) rotateY(-20deg) translateX(8%); }
+.case-intro { padding-top: 4rem; padding-bottom: 4rem; max-width: 900px; }
+.case-intro h2, .section-heading h2, .case-cta h2 { color: #092a4a; max-width: 720px; }
+.case-intro > p:last-child { max-width: 700px; }
+.featured-cases { padding: 4rem 0; background: #eef3f7; }
+.section-heading { margin-bottom: 2rem; }
+.case-list { display: grid; gap: 1.5rem; }
+.case-card { padding: 2rem; border-top: 4px solid #f29f05; border-radius: 8px; }
+.case-card-dark { background: #092a4a; color: var(--color-white); }
+.case-card-light { background: var(--color-white); }
+.case-card-accent { background: #f29f05; border-top-color: #092a4a; }
+.case-card-top { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid rgba(255,255,255,.25); padding-bottom: 1rem; }
+.case-card-light .case-card-top { border-color: var(--color-border); }
+.case-number { color: #f29f05; font-weight: 700; }
+.case-type { font-size: .78rem; font-weight: 700; letter-spacing: .12em; }
+.case-card-body { display: grid; grid-template-columns: 1fr 210px; gap: 3rem; padding-top: 2rem; }
+.case-card h3 { max-width: 650px; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; }
+.case-card p { max-width: 680px; font-size: 1rem; line-height: 1.6; }
+.case-card-dark p { color: #dce8f3; }
+.case-link { color: #f29f05; font-weight: 700; text-decoration: none; }
+.case-card-light .case-link { color: var(--color-primary); }
+.case-card-accent .case-link, .case-card-accent h3, .case-card-accent p { color: #092a4a; }
+.case-link span { margin-left: .4rem; }
+.case-result { align-self: end; border-left: 1px solid currentColor; padding-left: 1.5rem; }
+.case-result strong { display: block; font-size: 3.5rem; line-height: 1; }
+.case-result span { display: block; margin-top: .5rem; font-size: .9rem; }
+.case-process { padding-top: 4rem; padding-bottom: 4rem; }
+.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.process-grid div { border-top: 3px solid #f29f05; padding-top: 1rem; }
+.process-grid span { color: #f29f05; font-weight: 700; }
+.process-grid h3 { color: #092a4a; margin-top: 1.5rem; }
+.process-grid p { font-size: 1rem; }
+.case-cta { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding-top: 4rem; padding-bottom: 4rem; }
+
+@media (max-width: 700px) {
+  .hero-grid { inset: 45% 0 0; }
+  .case-card-body { grid-template-columns: 1fr; gap: 2rem; }
+  .case-result { align-self: start; }
+  .process-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .case-cta { align-items: flex-start; flex-direction: column; }
+}

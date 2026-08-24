@@ -1,0 +1,162 @@
+/* About Page Styles */
+
+.page-hero {
+  position: relative;
+  color: var(--color-white);
+  padding: 6rem 1rem;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  color: #e8f0ff;
+  margin: 0;
+}
+
+.about-section {
+  padding: 3rem;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  margin: 3rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.about-content h2 {
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--color-gray);
+}
+
+.mission-vision {
+  margin: 4rem 0;
+}
+
+.mission-vision .card {
+  text-align: center;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.mission-vision h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.mission-vision p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e8f0ff;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.values-list li {
+  padding: 0.5rem 0;
+  color: #e8f0ff;
+  font-size: 1rem;
+}
+
+.values-list strong {
+  color: #ffffff;
+}
+
+.why-choose-us {
+  margin: 4rem 0;
+}
+
+.why-choose-us h2 {
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.feature-box {
+  text-align: center;
+}
+
+.feature-box h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #0052cc 0%, #003a99 100%);
+  color: var(--color-white);
+  padding: 3rem;
+  border-radius: 8px;
+  margin: 3rem 0;
+}
+
+.cta-section h2 {
+  color: var(--color-white);
+}
+
+.cta-section p {
+  color: #e8f0ff;
+  margin-bottom: 2rem;
+}

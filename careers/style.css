@@ -1,0 +1,202 @@
+.careers-hero {
+	position: relative;
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	background: #092a4a;
+	color: var(--color-white);
+}
+
+.careers-hero-content {
+	position: relative;
+	z-index: 1;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.eyebrow {
+	color: #f29f05;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	margin-bottom: 0.8rem;
+}
+
+.careers-hero h1 {
+	max-width: 720px;
+	color: var(--color-white);
+	font-size: clamp(2.5rem, 6vw, 4.5rem);
+	line-height: 1.05;
+	margin-bottom: 1.2rem;
+}
+
+.careers-hero p:not(.eyebrow) {
+	max-width: 560px;
+	color: #dce8f3;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.hero-mark {
+	position: absolute;
+	right: 8%;
+	width: min(35vw, 400px);
+	height: min(35vw, 400px);
+	display: grid;
+	place-items: center;
+	border: 1px solid rgba(242, 159, 5, 0.5);
+	transform: rotate(45deg);
+}
+
+.hero-mark::before,
+.hero-mark::after {
+	content: '';
+	position: absolute;
+	width: 72%;
+	height: 72%;
+	border: 1px solid rgba(220, 232, 243, 0.35);
+}
+
+.hero-mark::after {
+	width: 42%;
+	height: 42%;
+	border-color: rgba(242, 159, 5, 0.8);
+}
+
+.hero-mark span {
+	color: #f29f05;
+	font-size: clamp(1.5rem, 4vw, 3rem);
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	transform: rotate(-45deg);
+}
+
+.people-section {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.section-intro {
+	max-width: 700px;
+	margin-bottom: 3rem;
+}
+
+.section-intro h2,
+.section-heading h2,
+.careers-cta h2 {
+	color: #092a4a;
+	max-width: 700px;
+}
+
+.principles-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.principle {
+	padding: 1.8rem;
+	border-top: 4px solid #f29f05;
+	background: var(--color-white);
+	border-radius: 8px;
+}
+
+.principle-number,
+.opportunity-index {
+	color: #f29f05;
+	font-weight: 700;
+	font-size: 0.9rem;
+}
+
+.principle h3 {
+	color: #092a4a;
+	margin-top: 1.5rem;
+	margin-bottom: 0.8rem;
+}
+
+.principle p {
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+.opportunities-section {
+	padding: 4rem 0;
+	background: #eef3f7;
+}
+
+.section-heading {
+	margin-bottom: 2rem;
+}
+
+.opportunity-list {
+	border-top: 1px solid #b9c7d3;
+}
+
+.opportunity-row {
+	display: grid;
+	grid-template-columns: 1.1fr 1.5fr 3rem;
+	align-items: center;
+	gap: 2rem;
+	padding: 1.5rem 0;
+	border-bottom: 1px solid #b9c7d3;
+}
+
+.opportunity-row h3 {
+	display: inline;
+	color: #092a4a;
+	margin-left: 1.5rem;
+	font-size: 1.35rem;
+}
+
+.opportunity-row p {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.opportunity-row a {
+	color: #0052cc;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: right;
+	text-decoration: none;
+}
+
+.careers-cta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+@media (max-width: 800px) {
+	.hero-mark {
+		display: none;
+	}
+
+	.principles-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.opportunity-row {
+		grid-template-columns: 1fr 2rem;
+		gap: 0.75rem;
+	}
+
+	.opportunity-row p {
+		grid-column: 1 / -1;
+		grid-row: 2;
+	}
+
+	.opportunity-row a {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.careers-cta {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}

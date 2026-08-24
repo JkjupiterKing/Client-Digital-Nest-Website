@@ -1,0 +1,65 @@
+/* Quality Assurance Styles */
+
+.page-hero {
+  position: relative;
+  color: var(--color-white);
+  padding: 6rem 1rem 4rem;
+  text-align: center;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.qa-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 3px solid #f29f05;
+}
+
+.qa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.qa-card h3 {
+  color: #092a4a;
+  margin-bottom: 0.8rem;
+}
