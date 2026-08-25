@@ -1,2 +1,4 @@
 *.zip
 client-document/
+
+# Large ZIP files
