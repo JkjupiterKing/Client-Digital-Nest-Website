@@ -147,7 +147,7 @@
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(135deg, #0052cc 0%, #003a99 100%);
+  background: #0f2043;
   color: var(--color-white);
   padding: 4rem 2rem;
   border-radius: 8px;

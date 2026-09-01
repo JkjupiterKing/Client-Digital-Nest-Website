@@ -29,39 +29,6 @@
   <main class="container">
     <section class="contact-section">
       <div class="contact-grid">
-        <!-- Contact Form -->
-        <div class="contact-form-wrapper">
-          <h2>Send us a Message</h2>
-          <form id="contactForm" class="contact-form">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="john@company.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Subject / Service Line *</label>
-              <input type="text" id="subject" name="subject" placeholder="Solar PV Design / Data Annotation / MRO Inquiry" required>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us about your engineering or data project requirements..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-          <div id="formMessage" class="form-message"></div>
-        </div>
 
         <!-- Contact Info -->
         <div class="contact-info-wrapper">
@@ -104,6 +71,42 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- Enquiry Form -->
+        <div class="contact-form-wrapper">
+          <h2>Enquiry Form</h2>
+          <form id="enquiryForm" class="contact-form">
+            <div class="form-group">
+              <label for="enquiryName">Full Name *</label>
+              <input type="text" id="enquiryName" name="enquiryName" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiryEmail">Email Address *</label>
+              <input type="email" id="enquiryEmail" name="enquiryEmail" placeholder="john@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiryDate">Preferred Date *</label>
+              <input type="date" id="enquiryDate" name="enquiryDate" required>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiryTime">Preferred Time *</label>
+              <select id="enquiryTime" name="enquiryTime" required disabled>
+                <option value="">-- Select a date first --</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiryMessage">Message *</label>
+              <textarea id="enquiryMessage" name="enquiryMessage" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+          </form>
+          <div id="enquiryFormMessage" class="form-message"></div>
         </div>
       </div>
     </section>
