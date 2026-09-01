@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Digital Nest Solutions (DNS) for CAD & Solar PV Design, Data Annotation for Machine Learning, and MRO Data Engineering.">
+  <meta name="description"
+    content="Contact Digital Nest Solutions (DNS) for CAD & Solar PV Design, Data Annotation for Machine Learning, and MRO Data Engineering.">
   <title>Connect With Us - Digital Nest Solutions</title>
   <link rel="stylesheet" href="../global.css">
   <link rel="stylesheet" href="../components/header/header.css">
@@ -11,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <div id="header"></div>
 
@@ -28,86 +31,75 @@
 
   <main class="container">
     <section class="contact-section">
+      <h2 style="text-align: center; color: #092a4a; font-size: 2.2rem; margin-bottom: 2rem;">Contact Us</h2>
       <div class="contact-grid">
 
-        <!-- Contact Info -->
-        <div class="contact-info-wrapper">
-          <h2>Contact Information</h2>
-          
-          <div class="info-card">
-            <h3>✉️ Direct Contact</h3>
-            <p>
-              <strong>Email:</strong><br>
-              <a href="mailto:info@digitalnestsolutions.com">info@digitalnestsolutions.com</a>
-            </p>
-            <p style="margin-top: 1rem;">
-              <strong>Website:</strong><br>
-              <a href="https://www.digitalnestsolutions.com" target="_blank" rel="noopener noreferrer">www.digitalnestsolutions.com</a>
-            </p>
-            <p style="margin-top: 1rem;">
-              <strong>Call Us:</strong><br>
-              <a href="tel:9611362920">+91 9611362920</a>
-            </p>
-
-            <h3 style="margin-top: 1.5rem;">🌐 Global Footprint</h3>
-            <p style="font-size: 0.95rem; color: #475569;">
-              <strong>Permanent Office:</strong> India (Tamil Nadu / Mysuru)<br>
-              <strong>Global Presence:</strong> USA (Colorado, Texas, Florida, Miami), UK (London), Denmark, Australia (Sydney)
-            </p>
-
-            <h3 style="margin-top: 1.5rem;">🛡️ ISO Certifications</h3>
-            <p style="font-size: 0.95rem; color: #475569;">
-              • ISO 9001:2015 (Quality Management System)<br>
-              • ISO/IEC 27001:2013 (Information Security System)
-            </p>
-
-            <p class="follow-us-text" style="margin-top: 1.5rem;">
-              <strong>Follow Us:</strong>
-            </p>
-            <div class="follow-us-icons">
-              <a href="https://x.com/digitalnestsolutions" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/Digitalnestsolutions/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Enquiry Form -->
-        <div class="contact-form-wrapper">
-          <h2>Enquiry Form</h2>
+        <!-- Enquiry Form (Left) -->
+        <div class="contact-form-wrapper card"
+          style="padding: 2.5rem; border-radius: 8px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
           <form id="enquiryForm" class="contact-form">
             <div class="form-group">
-              <label for="enquiryName">Full Name *</label>
-              <input type="text" id="enquiryName" name="enquiryName" placeholder="John Doe" required>
+              <label for="enquiryName">Full Name</label>
+              <input type="text" id="enquiryName" name="enquiryName" placeholder="Your Name" required>
             </div>
 
             <div class="form-group">
-              <label for="enquiryEmail">Email Address *</label>
-              <input type="email" id="enquiryEmail" name="enquiryEmail" placeholder="john@company.com" required>
+              <label for="enquiryEmail">Email Address</label>
+              <input type="email" id="enquiryEmail" name="enquiryEmail" placeholder="you@example.com" required>
             </div>
 
             <div class="form-group">
-              <label for="enquiryDate">Preferred Date *</label>
-              <input type="date" id="enquiryDate" name="enquiryDate" required>
+              <label for="enquiryPhone">Phone Number</label>
+              <input type="tel" id="enquiryPhone" name="enquiryPhone" placeholder="Your Phone Number" required>
             </div>
 
             <div class="form-group">
-              <label for="enquiryTime">Preferred Time *</label>
-              <select id="enquiryTime" name="enquiryTime" required disabled>
-                <option value="">-- Select a date first --</option>
-              </select>
+              <label for="enquiryMessage">Message</label>
+              <textarea id="enquiryMessage" name="enquiryMessage" rows="5" placeholder="Write your message here..."
+                required></textarea>
             </div>
 
-            <div class="form-group">
-              <label for="enquiryMessage">Message *</label>
-              <textarea id="enquiryMessage" name="enquiryMessage" rows="5" placeholder="Tell us about your requirements..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn">Submit Enquiry</button>
+            <button type="submit" class="btn"
+              style="background-color: #05236c; display: flex; align-items: center; gap: 0.5rem; width: max-content; padding: 0.75rem 2rem; border-radius: 20px; font-weight: bold;">SEND
+              MESSAGE <i class="fas fa-paper-plane"></i></button>
           </form>
           <div id="enquiryFormMessage" class="form-message"></div>
         </div>
+
+        <!-- Contact Info (Right) -->
+        <div class="contact-info-wrapper card"
+          style="padding: 3rem 2rem; border-radius: 8px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="color: #475569; font-size: 1.5rem; margin-bottom: 1.5rem;">Our Office</h3>
+
+          <p style="color: #475569; font-style: italic; line-height: 1.8; margin-bottom: 1.5rem;">
+            <strong>Digital Nest Solutions</strong><br>
+            Permanent Office: India (Tamil Nadu / Mysuru)<br>
+            Global Presence: USA, UK, Denmark, Australia
+          </p>
+
+          <p style="color: #475569; line-height: 1.8; font-style: italic; font-size: 0.95rem;">
+            <strong>Email:</strong> <a href="mailto:info@digitalnestsolutions.com"
+              style="color: inherit; text-decoration: none;">info@digitalnestsolutions.com</a><br>
+            <strong>Phone:</strong> <a href="tel:+919611362920" style="color: inherit; text-decoration: none;">+91
+              9611362920</a>
+          </p>
+
+          <p style="color: #475569; font-size: 0.9rem; margin-top: 1.5rem;">
+            <strong>Business Hours:</strong> Monday - Saturday, 9:00 AM to 6:00 PM IST
+          </p>
+
+          <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.5rem;">
+            <a href="#" aria-label="Instagram" style="color: #05236c; transition: color 0.3s;"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" style="color: #05236c; transition: color 0.3s;"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter" style="color: #05236c; transition: color 0.3s;"><i
+                class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook" style="color: #05236c; transition: color 0.3s;"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -117,19 +109,23 @@
       <div class="faq-grid">
         <div class="faq-item card">
           <h3>What engagement models do you offer?</h3>
-          <p>We provide flexible structures: Full-Time Employment (FTE) dedicated teams, Pay-per-project deliverables, and Hourly Basis support.</p>
+          <p>We provide flexible structures: Full-Time Employment (FTE) dedicated teams, Pay-per-project deliverables,
+            and Hourly Basis support.</p>
         </div>
         <div class="faq-item card">
           <h3>What is your design &amp; data accuracy rate?</h3>
-          <p>We deliver 99.0% verified accuracy for Solar PV &amp; CAD Design Services and 100% accuracy for Data Annotation and MRO Data Engineering.</p>
+          <p>We deliver 99.0% verified accuracy for Solar PV &amp; CAD Design Services and 100% accuracy for Data
+            Annotation and MRO Data Engineering.</p>
         </div>
         <div class="faq-item card">
           <h3>What PV Design project scales do you handle?</h3>
-          <p>Our designers handle small kW residential rooftop installations to MW-scale utility ground mount projects worldwide.</p>
+          <p>Our designers handle small kW residential rooftop installations to MW-scale utility ground mount projects
+            worldwide.</p>
         </div>
         <div class="faq-item card">
           <h3>How is data security handled?</h3>
-          <p>We execute strict NDAs and operate under ISO/IEC 27001:2013 information security standards across all global projects.</p>
+          <p>We execute strict NDAs and operate under ISO/IEC 27001:2013 information security standards across all
+            global projects.</p>
         </div>
       </div>
     </section>
@@ -149,7 +145,15 @@
 
   <script src="../components/header/header.js"></script>
   <script src="../components/footer/footer.js"></script>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // Replace with your actual EmailJS public key
+      emailjs.init('IFjmMy8jhTWe6Gg6s');
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
