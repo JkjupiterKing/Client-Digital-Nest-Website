@@ -2,7 +2,7 @@
 
 ## About the Company
 
-**Digital Nest Solutions (DNS)** is a flexible global service partner founded in 2022. With 90+ years of collective experience and 65+ employees worldwide, DNS delivers high-precision **CAD & Solar PV Design**, **Data Annotation for Machine Learning (AI/ML)**, and **Maintenance, Repair & Operations (MRO) Data Engineering**.
+**Digital Nest Solutions (DNS)** is a flexible global service partner founded in 2022. With 90+ years of collective experience and 65+ employees worldwide, DNS delivers high-precision **CAD Design**, **Data Annotation for Machine Learning (AI/ML)**, and **Maintenance, Repair & Operations (MRO) Data Engineering**.
 
 *"The best way to predict your future is to create it."*
 
@@ -12,7 +12,7 @@ The **Digital Nest Solutions Website** is a responsive corporate web application
 
 ## Core Service Offerings (PDF Presentation Profile)
 
-1. **CAD & Solar PV Design Services** (kW to MW Scale, 99.0% Accuracy, 100% On-Time Delivery)
+1. **CAD Design Services** (kW to MW Scale, 99.0% Accuracy, 100% On-Time Delivery)
 2. **Data Annotation Services for ML & AI** (2D/3D Bounding Boxes, Segmentation, Polyline, 100% Accuracy)
 3. **MRO & Data Engineering** (1.2M+ Records Processed, 30k/month Capacity, Oil & Gas, Aerospace, Automotive, Power & Utilities)
 
