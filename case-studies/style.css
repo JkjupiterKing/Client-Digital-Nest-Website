@@ -8,18 +8,20 @@
   color: var(--color-white);
 }
 
+.container { max-width: 90%; }
 .case-hero-content { position: relative; z-index: 1; padding-top: 5rem; padding-bottom: 5rem; }
 .eyebrow { color: #f29f05; font-size: .78rem; font-weight: 700; letter-spacing: .14em; margin-bottom: .8rem; }
-.case-hero h1 { max-width: 760px; color: var(--color-white); font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.05; margin-bottom: 1.2rem; }
-.case-hero p:not(.eyebrow) { max-width: 580px; color: #dce8f3; font-size: 1.2rem; margin-bottom: 2rem; }
+.case-hero h1 { max-width: 100%; color: var(--color-white); font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.05; margin-bottom: 1.2rem; }
+.case-hero p:not(.eyebrow) { max-width: 100%; color: #dce8f3; font-size: 1.2rem; margin-bottom: 2rem; }
 .hero-grid { position: absolute; inset: 0 0 0 52%; opacity: .55; background-image: linear-gradient(rgba(242,159,5,.22) 1px, transparent 1px), linear-gradient(90deg, rgba(242,159,5,.22) 1px, transparent 1px); background-size: 54px 54px; transform: perspective(500px) rotateY(-20deg) translateX(8%); }
-.case-intro { padding-top: 4rem; padding-bottom: 4rem; max-width: 900px; }
-.case-intro h2, .section-heading h2, .case-cta h2 { color: #092a4a; max-width: 720px; }
-.case-intro > p:last-child { max-width: 700px; }
+.case-intro { padding-top: 4rem; padding-bottom: 4rem; max-width: 100%; margin: 0 3%; }
+.case-intro h2, .section-heading h2, .case-cta h2 { color: #092a4a; max-width: 100%; }
+.case-intro > p:last-child { max-width: 100%; }
 .featured-cases { padding: 4rem 0; background: #eef3f7; }
 .section-heading { margin-bottom: 2rem; }
-.case-list { display: grid; gap: 1.5rem; }
-.case-card { padding: 2rem; border-top: 4px solid #f29f05; border-radius: 8px; }
+.case-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.case-card { padding: 2rem; border-top: 4px solid #f29f05; border-radius: 8px; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.case-card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.2); }
 .case-card-dark { background: #092a4a; color: var(--color-white); }
 .case-card-light { background: var(--color-white); }
 .case-card-accent { background: #f29f05; border-top-color: #092a4a; }
@@ -27,15 +29,16 @@
 .case-card-light .case-card-top { border-color: var(--color-border); }
 .case-number { color: #f29f05; font-weight: 700; }
 .case-type { font-size: .78rem; font-weight: 700; letter-spacing: .12em; }
-.case-card-body { display: grid; grid-template-columns: 1fr 210px; gap: 3rem; padding-top: 2rem; }
-.case-card h3 { max-width: 650px; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; }
-.case-card p { max-width: 680px; font-size: 1rem; line-height: 1.6; }
+.case-card-body { display: flex; flex-direction: column; flex-grow: 1; gap: 2rem; padding-top: 2rem; }
+.case-card h3 { max-width: 100%; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; }
+.case-card p { max-width: 100%; font-size: 1rem; line-height: 1.6; }
 .case-card-dark p { color: #dce8f3; }
-.case-link { color: #f29f05; font-weight: 700; text-decoration: none; }
+.case-link { color: #f29f05; font-weight: 700; text-decoration: none; transition: color 0.3s ease; }
+.case-link:hover { color: var(--color-white); }
 .case-card-light .case-link { color: var(--color-primary); }
 .case-card-accent .case-link, .case-card-accent h3, .case-card-accent p { color: #092a4a; }
 .case-link span { margin-left: .4rem; }
-.case-result { align-self: end; border-left: 1px solid currentColor; padding-left: 1.5rem; }
+.case-result { align-self: start; border-top: 1px solid currentColor; border-left: none; padding-top: 1.5rem; padding-left: 0; margin-top: auto; width: 100%; }
 .case-result strong { display: block; font-size: 3.5rem; line-height: 1; }
 .case-result span { display: block; margin-top: .5rem; font-size: .9rem; }
 .case-process { padding-top: 4rem; padding-bottom: 4rem; }
@@ -45,6 +48,8 @@
 .process-grid h3 { color: #092a4a; margin-top: 1.5rem; }
 .process-grid p { font-size: 1rem; }
 .case-cta { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding-top: 4rem; padding-bottom: 4rem; }
+.case-cta .btn { background-color: var(--color-white); color: var(--color-primary); font-weight: 600; border: none; }
+.case-cta .btn:hover { background-color: #ff6b35; color: #ffffff; }
 
 @media (max-width: 700px) {
   .hero-grid { inset: 45% 0 0; }
