@@ -63,3 +63,15 @@
   color: #092a4a;
   margin-bottom: 0.8rem;
 }
+
+.cta-section .btn {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  font-weight: 600;
+  border: none;
+}
+
+.cta-section .btn:hover {
+  background-color: #ff6b35;
+  color: #ffffff;
+}

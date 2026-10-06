@@ -1,14 +1,14 @@
-# Digital Nest Solutions Website
+# Digital Nest Solutions Private Limited Website
 
 ## About the Company
 
-**Digital Nest Solutions (DNS)** is a flexible global service partner founded in 2022. With 90+ years of collective experience and 65+ employees worldwide, DNS delivers high-precision **CAD Design**, **Data Annotation for Machine Learning (AI/ML)**, and **Maintenance, Repair & Operations (MRO) Data Engineering**.
+**Digital Nest Solutions Private Limited (DNS)** is a flexible global service partner founded in 2022. With 90+ years of collective experience and 65+ employees worldwide, DNS delivers high-precision **CAD Design**, **Data Annotation for Machine Learning (AI/ML)**, and **Maintenance, Repair & Operations (MRO) Data Engineering**.
 
 *"The best way to predict your future is to create it."*
 
 ## Project Overview
 
-The **Digital Nest Solutions Website** is a responsive corporate web application built with standard HTML5, CSS3, and JavaScript. It incorporates ISO 9001:2015 & ISO/IEC 27001:2013 standards, global presence details (USA, UK, Denmark, Australia, India), and reusable header/footer components.
+The **Digital Nest Solutions Private Limited Website** is a responsive corporate web application built with standard HTML5, CSS3, and JavaScript. It incorporates ISO 9001:2015 & ISO/IEC 27001:2013 standards, global presence details (USA, UK, Denmark, Australia, India), and reusable header/footer components.
 
 ## Core Service Offerings (PDF Presentation Profile)
 

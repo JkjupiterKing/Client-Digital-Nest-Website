@@ -169,6 +169,11 @@
 .article-card-dark .article-meta,
 .article-card-dark .article-link {
 	color: #f29f05;
+	transition: color 0.3s ease;
+}
+
+.article-card-dark .article-link:hover {
+	color: var(--color-white);
 }
 
 .article-link,
@@ -263,6 +268,18 @@
 
 .newsletter-section p:not(.eyebrow) {
 	max-width: 600px;
+}
+
+.newsletter-section .btn {
+	background-color: var(--color-white);
+	color: var(--color-primary);
+	font-weight: 600;
+	border: none;
+}
+
+.newsletter-section .btn:hover {
+	background-color: #ff6b35;
+	color: #ffffff;
 }
 
 @media (max-width: 900px) {

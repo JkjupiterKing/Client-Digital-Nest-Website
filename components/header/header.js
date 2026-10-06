@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .catch(error => console.error('Error loading header:', error));
   }
+  
+  // Initialize animations for elements already in DOM
+  initializeScrollAnimations();
 });
 
 // Highlight active page link in header
@@ -61,4 +64,32 @@ function initializeHamburgerMenu() {
       }
     });
   }
+}
+
+// Initialize Scroll Animations globally
+function initializeScrollAnimations() {
+  const selectors = [
+    '.card', '.page-hero h1', '.page-hero p', 'section h2', 
+    '.btn:not(.nav-cta)', '.article-card', '.topic-card', 
+    '.cta-section', '.case-card', '.feature-card', 
+    '.timeline-item', '.info-card', '.hero-slide h1', '.hero-slide p'
+  ];
+  
+  const elementsToAnimate = document.querySelectorAll(selectors.join(', '));
+  
+  elementsToAnimate.forEach(el => {
+    el.classList.add('animate-on-scroll');
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
 }

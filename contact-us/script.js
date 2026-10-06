@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const phone = document.getElementById('enquiryPhone').value;
       const message = document.getElementById('enquiryMessage').value;
       
+      const submitBtn = form.querySelector('button[type="submit"]');
+
       if (!name || !email || !phone || !message) {
-        showMessage('Please fill in all required fields.', 'error');
+        showMessage('Please fill out the missing field before sending message.', 'error');
         return;
       }
       
@@ -22,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       
+      const originalBtnHtml = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'SENDING...';
+      submitBtn.disabled = true;
+
       // Send automated email using EmailJS
       const templateParams = {
         customer_name: name,
@@ -34,13 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
       emailjs.send('service_v50ihkh', 'template_ignjrs8', templateParams)
         .then(function(response) {
            console.log('SUCCESS!', response.status, response.text);
+           submitBtn.innerHTML = 'SENT <i class="fas fa-check"></i>';
            showMessage('Your message has been successfully sent! A confirmation email has been sent to you.', 'success');
+           setTimeout(() => {
+             submitBtn.innerHTML = originalBtnHtml;
+             submitBtn.disabled = false;
+             form.reset();
+           }, 3000);
         }, function(error) {
            console.log('FAILED...', error);
+           submitBtn.innerHTML = originalBtnHtml;
+           submitBtn.disabled = false;
            showMessage('We encountered an error sending your message. Please try again later.', 'error');
         });
-
-      form.reset();
     });
   }
 });

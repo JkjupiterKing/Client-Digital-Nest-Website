@@ -171,6 +171,18 @@
 	padding-bottom: 4rem;
 }
 
+.careers-cta .btn {
+	background-color: var(--color-white);
+	color: var(--color-primary);
+	font-weight: 600;
+	border: none;
+}
+
+.careers-cta .btn:hover {
+	background-color: #ff6b35;
+	color: #ffffff;
+}
+
 @media (max-width: 800px) {
 	.hero-mark {
 		display: none;
