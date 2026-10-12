@@ -48,8 +48,8 @@
               </select>
             </div>
 
-            <!-- Step 2: Date & Time Picker -->
-            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <!-- Step 2: Date, Time Slot & Phone (Same Line) -->
+            <div class="form-row" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.5rem;">
               <div class="form-group">
                 <label for="booking-date" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Preferred Date *</label>
                 <input type="date" id="booking-date" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
@@ -66,6 +66,11 @@
                   <option value="05:00 PM - 05:30 PM IST">05:00 PM - 05:30 PM IST</option>
                 </select>
               </div>
+
+              <div class="form-group">
+                <label for="client-phone" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Phone Number *</label>
+                <input type="tel" id="client-phone" required placeholder="Phone Number" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+              </div>
             </div>
 
             <!-- Step 3: Contact Info -->
@@ -78,11 +83,6 @@
                 <label for="client-email" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Business Email *</label>
                 <input type="email" id="client-email" required placeholder="name@company.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
               </div>
-            </div>
-
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-              <label for="client-phone" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Phone Number *</label>
-              <input type="tel" id="client-phone" required placeholder="Your Phone Number" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
             </div>
 
             <div class="form-group" style="margin-bottom: 1.5rem;">
