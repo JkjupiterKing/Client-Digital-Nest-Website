@@ -26,7 +26,7 @@
   </section>
 
   <main class="container">
-    <section class="booking-section" style="margin: 4rem 0;">
+    <section class="booking-section" style="margin: 2.5rem 0;">
       <div class="booking-grid" style="display: grid; grid-template-columns: 1fr 380px; gap: 3rem; align-items: flex-start;">
         
         <!-- Booking Form Card -->
@@ -40,11 +40,11 @@
               <label for="booking-topic" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Consultation Topic *</label>
               <select id="booking-topic" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px; background: white;">
                 <option value="">-- Choose Consultation Subject --</option>
-                <option value="mdm-strategy">Master Data Management Strategy</option>
-                <option value="mro-cleansing">MRO &amp; Spare Parts Cataloging</option>
-                <option value="material-master">Material Master Standardisation</option>
-                <option value="sample-audit">Sample Data Audit Review</option>
-                <option value="general-consult">General Digital Transformation</option>
+                <option value="Master Data Management Strategy">Master Data Management Strategy</option>
+                <option value="MRO &amp; Spare Parts Cataloging">MRO &amp; Spare Parts Cataloging</option>
+                <option value="Material Master Standardisation">Material Master Standardisation</option>
+                <option value="Sample Data Audit Review">Sample Data Audit Review</option>
+                <option value="General Digital Transformation">General Digital Transformation</option>
               </select>
             </div>
 
@@ -59,11 +59,11 @@
                 <label for="booking-time" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Preferred Time Slot *</label>
                 <select id="booking-time" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px; background: white;">
                   <option value="">-- Select Time Slot --</option>
-                  <option value="10:00 AM">10:00 AM - 10:30 AM IST</option>
-                  <option value="11:30 AM">11:30 AM - 12:00 PM IST</option>
-                  <option value="02:00 PM">02:00 PM - 02:30 PM IST</option>
-                  <option value="03:30 PM">03:30 PM - 04:00 PM IST</option>
-                  <option value="05:00 PM">05:00 PM - 05:30 PM IST</option>
+                  <option value="10:00 AM - 10:30 AM IST">10:00 AM - 10:30 AM IST</option>
+                  <option value="11:30 AM - 12:00 PM IST">11:30 AM - 12:00 PM IST</option>
+                  <option value="02:00 PM - 02:30 PM IST">02:00 PM - 02:30 PM IST</option>
+                  <option value="03:30 PM - 04:00 PM IST">03:30 PM - 04:00 PM IST</option>
+                  <option value="05:00 PM - 05:30 PM IST">05:00 PM - 05:30 PM IST</option>
                 </select>
               </div>
             </div>
@@ -81,11 +81,16 @@
             </div>
 
             <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="client-phone" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Phone Number *</label>
+              <input type="tel" id="client-phone" required placeholder="Your Phone Number" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 1.5rem;">
               <label for="booking-notes" style="display: block; font-weight: 600; color: #092a4a; margin-bottom: 0.4rem;">Meeting Objectives / Agenda Notes</label>
               <textarea id="booking-notes" rows="4" placeholder="Mention key topics or questions you'd like to address..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;"></textarea>
             </div>
 
-            <button type="submit" class="btn" style="width: 100%; padding: 1rem; font-size: 1.05rem;">Confirm Appointment</button>
+            <button type="submit" id="submitBookingBtn" class="btn" style="width: 100%; padding: 1rem; font-size: 1.05rem;">Confirm Appointment</button>
           </form>
 
           <div id="bookingMessage" class="form-message" style="margin-top: 1rem;"></div>
@@ -125,6 +130,13 @@
 
   <script src="../components/header/header.js"></script>
   <script src="../components/footer/footer.js"></script>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('IFjmMy8jhTWe6Gg6s');
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

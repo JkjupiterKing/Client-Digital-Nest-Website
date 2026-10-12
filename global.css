@@ -344,7 +344,8 @@ section.intro {
   position: relative;
   color: var(--color-white);
   padding: 2.5rem 1.5rem 2rem;
-  min-height: 250px;
+  height: 40vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Send automated email using EmailJS
       const templateParams = {
+        to_email: 'gayathrin1202@gmail.com',
+        reply_to: email,
         customer_name: name,
         customer_email: email,
         customer_phone: phone,

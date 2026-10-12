@@ -5,7 +5,8 @@
   position: relative;
   color: var(--color-white);
   text-align: center;
-  min-height: 80vh;
+  height: 40vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,28 +29,27 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out, opacity 0s 1s; /* opacity changes instantly after transform */
 }
 
 .hero-slide.active {
   opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}
+
+.hero-slide.previous {
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
 }
 
 .hero-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(4px);
-  animation: zoomOut 0.5s ease-out;
-}
-
-@keyframes zoomOut {
-  from {
-    transform: scale(1.2);
-  }
-  to {
-    transform: scale(1);
-  }
+  filter: brightness(0.6);
 }
 
 .hero-content {
@@ -66,8 +66,8 @@
 }
 
 .hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
   color: #e8f0ff;
 }
 
@@ -75,7 +75,9 @@
   background-color: var(--color-white);
   color: var(--color-primary);
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
 }
 
 .hero .btn:hover {
@@ -204,7 +206,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .hero {
-    min-height: 70vh;
+    min-height: 40vh;
   }
 
   .hero-content h1 {
@@ -226,7 +228,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 60vh;
+    min-height: 40vh;
   }
 
   .hero-content h1 {
@@ -269,7 +271,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 50vh;
+    min-height: 40vh;
   }
 
   .hero-content h1 {

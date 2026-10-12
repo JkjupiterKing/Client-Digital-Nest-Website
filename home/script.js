@@ -6,15 +6,21 @@ const heroSlides = document.querySelectorAll('.hero-slide');
 let currentSlide = 0;
 
 function nextSlide() {
-  heroSlides[currentSlide].classList.remove('active');
+  const previousSlide = currentSlide;
+  
+  // Move current slide to the left
+  heroSlides[previousSlide].classList.remove('active');
+  heroSlides[previousSlide].classList.add('previous');
+  
+  // Bring next slide in from the right
   currentSlide = (currentSlide + 1) % heroSlides.length;
+  heroSlides[currentSlide].classList.remove('previous'); // Ensure it's not stuck on the left
   heroSlides[currentSlide].classList.add('active');
   
-  // Reset and trigger zoom animation for the new slide
-  const img = heroSlides[currentSlide].querySelector('img');
-  img.style.animation = 'none';
-  img.offsetHeight; // Trigger reflow
-  img.style.animation = 'zoomOut 1s ease-out';
+  // Clean up the previous slide after animation completes (1 second)
+  setTimeout(() => {
+    heroSlides[previousSlide].classList.remove('previous');
+  }, 1000);
 }
 
 // Auto-slide every 7 seconds

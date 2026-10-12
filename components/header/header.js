@@ -72,7 +72,8 @@ function initializeScrollAnimations() {
     '.card', '.page-hero h1', '.page-hero p', 'section h2', 
     '.btn:not(.nav-cta)', '.article-card', '.topic-card', 
     '.cta-section', '.case-card', '.feature-card', 
-    '.timeline-item', '.info-card', '.hero-slide h1', '.hero-slide p'
+    '.timeline-item', '.info-card', '.hero-slide h1', '.hero-slide p',
+    '.careers-hero h1', '.careers-hero p', '.case-hero h1', '.case-hero p'
   ];
   
   const elementsToAnimate = document.querySelectorAll(selectors.join(', '));
